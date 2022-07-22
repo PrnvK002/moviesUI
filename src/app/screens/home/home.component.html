@@ -1,6 +1,5 @@
-<div fxLayout="row wrap" fxLayout.xs="column">
+<div style="display: flex;flex-wrap:wrap;justify-content: space-around;" class="mt-5" fxLayout.xs="column">
   <app-card
-  fxFlexAlign="baseline"
     *ngFor="let movie of movieService.moviesData"
     [movie]="movie"
   ></app-card>
