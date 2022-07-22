@@ -48,8 +48,5 @@ export class MovieServiceService {
     });
   }
 
-  public searchWithFirstAirDate(date:string){
-
-  }
 
 }

@@ -28,9 +28,6 @@ export class NavbarComponent implements OnInit {
     else if(this.searchForm.value.searchOption === 'vote_average' ){
       this.movieService.searchWithRating(this.searchForm.value.searchTitle);
     }
-    else if(this.searchForm.value.searchOption === 'first_air_date'){
-
-    }
   }
 
 }
