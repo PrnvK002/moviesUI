@@ -34,6 +34,22 @@ export class MovieServiceService {
     })
   }
 
-  
+  public searchWithTitle(title:string){
+    this.moviesData = this.moviesData.filter((e:movieModel):any => {
+      if(e.name.search(title) !== -1 ){
+        return e;
+      }
+    })
+  }
+
+  public searchWithRating(rating:string){
+    this.moviesData = this.moviesData.filter((e:movieModel):any => {
+      return e.vote_average === Number(rating);
+    });
+  }
+
+  public searchWithFirstAirDate(date:string){
+
+  }
 
 }
